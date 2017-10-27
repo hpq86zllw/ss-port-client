@@ -35,8 +35,8 @@ App({
 
   },
   globalData: {
-    title: _TITLE_,
-    server: _SERVER_,
+    title: TITLE,
+    server: SERVER,
     userInfo: null,
     authKey: null
   }
