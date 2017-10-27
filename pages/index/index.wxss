@@ -1,0 +1,43 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #000000;
+}
+
+.no-portinfo {
+  text-align: center;
+}
+
+.portinfo {
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.portinfo-detail {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 5rpx auto 20rpx auto;
+}
+
+.portinfo-detail-label {
+  font-size: 22rpx;
+  color: #AAAAAA;
+  margin-top: 10rpx;
+}
+
+.portinfo-detail-value {
+  font-size: 27rpx;
+}

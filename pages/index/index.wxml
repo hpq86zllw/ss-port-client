@@ -1,0 +1,36 @@
+<view class="container" wx:if="{{loaded}}">
+  <view class="wrapper">
+
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+
+    <view class="portinfo" wx:if="{{hasPort}}">
+
+      <progress stroke-width="7" percent="{{portDetail.usedFlowPercent}}" />
+
+      <view class="portinfo-detail">
+        <view class="portinfo-detail-label">{{flow}}</view>
+        <view class="portinfo-detail-value">{{portDetail.usedFlow}} / {{portDetail.totalFlow}}</view>
+        <view class="portinfo-detail-label">{{host}}</view>
+        <view class="portinfo-detail-value">{{portDetail.host}}</view>
+        <view class="portinfo-detail-label">{{portNo}}</view>
+        <view class="portinfo-detail-value">{{portDetail.portNo}}</view>
+        <view class="portinfo-detail-label">{{password}}</view>
+        <view class="portinfo-detail-value">{{portDetail.password}}</view>
+        <view class="portinfo-detail-label">{{encryptMethod}}</view>
+        <view class="portinfo-detail-value">{{portDetail.encryptMethod}}</view>
+
+      </view>
+
+      <button type="warn" size="mini" bindtap="deletePort" disabled="{{disabled}}">{{deletePort}}</button>
+
+    </view>
+
+    <view class='no-portinfo' wx:if="{{!hasPort}}">
+      <button type="primary" size="mini" bindtap="applyPort" disabled="{{disabled}}">{{applyPort}}</button>
+    </view>
+
+  </view>
+</view>
