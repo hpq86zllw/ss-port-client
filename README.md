@@ -16,4 +16,4 @@ SERVER 后端服务器地址
 申请端口  
 ![](https://raw.githubusercontent.com/hpq86zllw/asset-repository/master/img/apply.jpg)  
 查看端口信息和删除端口  
-![](https://raw.githubusercontent.com/hpq86zllw/asset-repository/master/img/delete.jpg)  
+![]()  
